@@ -49,3 +49,22 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.140.0-2
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Thu Mar 10 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.140.0-1
++ Revision: 643459
+- update to new version 0.14
+
+* Thu Dec 30 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.130.0-1mdv2011.0
++ Revision: 626241
+- new version
+
+* Fri Dec 03 2010 Shlomi Fish <shlomif@mandriva.org> 0.120.0-1mdv2011.0
++ Revision: 607543
+- import perl-Scope-Upper
+
