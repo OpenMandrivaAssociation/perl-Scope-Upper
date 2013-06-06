@@ -1,15 +1,14 @@
 %define upstream_name    Scope-Upper
-%define upstream_version 0.14
-
+%define upstream_version 0.22
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Version:    %perl_convert_version 0.22
+Release:	1
 
 Summary:    Act on upper scopes
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Scope/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Scope/Scope-Upper-0.22.tar.gz
 
 BuildRequires: perl(Exporter)
 BuildRequires: perl(XSLoader)
@@ -67,4 +66,5 @@ rm -rf %buildroot
 * Fri Dec 03 2010 Shlomi Fish <shlomif@mandriva.org> 0.120.0-1mdv2011.0
 + Revision: 607543
 - import perl-Scope-Upper
+
 
