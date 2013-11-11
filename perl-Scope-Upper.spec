@@ -1,19 +1,18 @@
 %define upstream_name    Scope-Upper
-%define upstream_version 0.22
+%define upstream_version 0.24
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 0.22
+Version:    %perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:    Act on upper scopes
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Scope/Scope-Upper-0.22.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Scope/Scope-Upper-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Exporter)
 BuildRequires: perl(XSLoader)
 BuildRequires: perl-devel
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module lets you defer actions _at run-time_ that will take place when
@@ -35,14 +34,11 @@ the control flow returns into an upper scope. Currently, you can:
 %{make} test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
 %clean
-rm -rf %buildroot
 
 %files
-%defattr(-,root,root)
 %doc README Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
@@ -66,5 +62,6 @@ rm -rf %buildroot
 * Fri Dec 03 2010 Shlomi Fish <shlomif@mandriva.org> 0.120.0-1mdv2011.0
 + Revision: 607543
 - import perl-Scope-Upper
+
 
 
