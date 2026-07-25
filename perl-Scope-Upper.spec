@@ -1,14 +1,14 @@
 %define upstream_name    Scope-Upper
-%define upstream_version 0.24
+%define upstream_version 0.34
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	3
+Version:    %{upstream_version}
+Release:	1
 
 Summary:    Act on upper scopes
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Scope/Scope-Upper-%{upstream_version}.tar.gz
+Url:        https://git.vpit.fr/?p=perl%2Fmodules%2FScope-Upper
+Source0:    https://cpan.metacpan.org/authors/id/V/VP/VPIT/Scope-Upper-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Exporter)
